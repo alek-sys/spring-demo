@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script type="text/javascript">
+    fetch("/api/visits")
+        .then(response => response.json())
+        .then(visits => {
+            visits.forEach(visit => {
+                const el = document.createElement('li');
+                el.innerText = visit.description;
+
+                document.querySelector('#visits').append(el);
+            });
+        });
+</script>
+
+<body>
+<h1>Welcome to Spring, {{ name }}</h1>
+
+<ul id="visits">
+</ul>
+
+</body>
+
+</html>
