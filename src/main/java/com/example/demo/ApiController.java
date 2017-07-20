@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class ApiController {
 
-    final VisitsRepository visitsRepository;
+    private final VisitsRepository visitsRepository;
 
     public ApiController(VisitsRepository visitsRepository) {
         this.visitsRepository = visitsRepository;

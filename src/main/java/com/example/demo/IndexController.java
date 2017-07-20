@@ -11,7 +11,7 @@ import java.util.Map;
 @Controller
 public class IndexController {
 
-    final VisitsRepository visitsRepository;
+    private final VisitsRepository visitsRepository;
 
     public IndexController(VisitsRepository visitsRepository) {
         this.visitsRepository = visitsRepository;
