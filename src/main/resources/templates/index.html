@@ -3,7 +3,7 @@
 <html lang="en">
 
 <script type="text/javascript">
-    fetch("/api/visits")
+    fetch("api/visits")
         .then(response => response.json())
         .then(visits => {
             visits.forEach(visit => {
